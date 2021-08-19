@@ -10,40 +10,37 @@
 <body>
 
     <nav class="navbar">
-        <h2><a href="#">OKFOOD</a></h2>
-        <ul>
+        <h2 class="navbar__heading"><a href="#">OKFOOD</a></h2>
+        <ul class="navbar__links">
             <li><a href="#">HOME</a></li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">MENU</a></li>
             <li><a href="#">CONTACT</a></li>
-            <li><button><a href="#">Sign Up</a></button></li>
+            <li><button class="sign-up-btn"><a href="#">Sign Up</a></button></li>
         </ul>
     </nav>
 
     <header class="header">
-        <div>
-            <h2>Good food makes a great day</h2>
-            <h3>intoducing OKFOOD, the best way to eat</h3>
-            <button><a href="#">Get Started</a></button>
+        <div class="header__info">
+            <h2>Good Food Makes <div>a Great Day</div></h2>
+            <h3>Introducing OKFOOD, The best way to eat.<div>Order in store or online today!</div></h3>
+            <button class="get-started-btn"><a href="#">Get Started</a></button>
         </div>
-        <div>
-            <!--3 header imgs go here-->
-            <img src="<%=require('./images/header/pexels-kasumi-loffler-3535395.jpg')%>">
-            <img src="<%=require('./images/header/pexels-lisa-1279330.jpg')%>">
-            <img src="<%=require('./images/header/pexels-roger-cziwerny-792028.jpg')%>">
+        <div class="header__imgs">
+            <img class="header__imgs__img-1" src="<%=require('./images/header/pexels-kasumi-loffler-3535395.jpg')%>">
+            <img class="header__imgs__img-2" src="<%=require('./images/header/pexels-roger-cziwerny-792028.jpg')%>">
+            <img class="header__imgs__img-3" src="<%=require('./images/header/pexels-lisa-1279330.jpg')%>">
         </div>
     </header>
 
     <section class="about-us">
-        <div>
-            <!--about us img here-->
-            <img src="<%=require('./images/about/divani-diva-s0duM7x1yuA-unsplash_a.png')%>">
+        <div class="about-us__img-container">
+            <img class="about-us__img" src="<%=require('./images/about/divani-diva-s0duM7x1yuA-unsplash_a.png')%>">
         </div>
-
-        <div>
-            <h3>ABOUT US</h3>
-            <h2>What's Special About This Website?</h2>
-            <p>We belive the key to are buisness is our customers and their trust.
+        <div class="about-us__info">
+            <h3 class="about-us__info__heading">ABOUT US</h3>
+            <h2 class="about-us__info__subheading">What's Special About This Website?</h2>
+            <p class="about-us__info__text">We belive the key to are buisness is our customers and their trust.
             That's why we never compromise on product quaility.
              We have a team to check the quality all the time.
             </p>
