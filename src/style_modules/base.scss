@@ -26,3 +26,7 @@ a {
 ul {
     list-style-type: none;
   }
+
+  input, input::placeholder {
+    font-family: 'Poppins', sans-serif;
+}

@@ -109,61 +109,67 @@
         </section>
 
         <section class="testimonials">
-            <h2>When Your Happy, We're Satisfied</h2>
-            <div class="testimonial__card">
-                <p class="testimonial__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt earum reprehenderit, accusantium explicabo perferendis
-                nesciunt accusamus minus eos necessitatibus repudiandae molestias
-                facere libero nobis. Quia animi voluptates tempora
-                reiciendis repellendus?
-                </p>
-
-                <div class="testimonial__profile">
-                    <img class="testimonial__profile__img" src="<%=require('./images/testimonial/jake-nackos-IF9TK5Uy-KI-unsplash.jpg')%>">
-                    <div class="testimonial__profile__info">
-                        <h2>Jasmine Alatas</h2>
-                        <div class="testimonial__card__rating">
-                            <div class="rating__stars">
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:#fff;"></i>
+            <h2 class="testimonials__heading">When Your Happy, We're Satisfied</h2>
+            <ul class="testimonials__cards">
+                <li class="testimonials__card">
+                    <p class="testimonials__card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid, eligendi nostrum quos sed nobis cum dolore, maxime itaque,
+                    excepturi modi delectus voluptatibus quidem voluptatum!
+                    Recusandae odit cupiditate optio adipisci neque!
+                    </p>
+                    <div class="testimonials__card__profile">
+                        <img class="testimonial__profile__img" src="<%=require('./images/testimonial/jake-nackos-IF9TK5Uy-KI-unsplash.jpg')%>">
+                        <div class="profile__rating">
+                            <h2 class="profile__rating__heading">Jasmine Altas</h2>
+                            <div class="profile__rating__rating">
+                                <div class="rating__stars">
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-unfilled" aria-hidden="true"></i>
+                                </div>
+                                <div class="rating__score">4.0</div>
                             </div>
-                            <div class="rating__score">4.0</div>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="testimonial__profile">
-                    <div class="testimonial__profile__img-container">
-                        <img src="<%=require('./images/testimonial/luis-villasmil-hh3ViD0r0Rc-unsplash.jpg')%>">
-                    </div>
-                    <div class="testimonial__profile__info">
-                        <h2>John Smith</h2>
-                        <div class="testimonial__card__rating">
-                            <div class="rating__stars">
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:rgb(241, 204, 36);"></i>
-                                <i class="fa fa-star" aria-hidden="true" style="color:#fff;"></i>
+                </li>
+                <li class="testimonials__card">
+                    <p class="testimonials__card__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid, eligendi nostrum quos sed nobis cum dolore, maxime itaque,
+                    excepturi modi delectus voluptatibus quidem voluptatum!
+                    Recusandae odit cupiditate optio adipisci neque!
+                    </p>
+                    <div class="testimonials__card__profile">
+                        <img class="testimonial__profile__img" src="<%=require('./images/testimonial/luis-villasmil-hh3ViD0r0Rc-unsplash.jpg')%>">
+                        <div class="profile__rating">
+                            <h2 class="profile__rating__heading">John Smith</h2>
+                            <div class="profile__rating__rating">
+                                <div class="rating__stars">
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-filled" aria-hidden="true"></i>
+                                    <i class="fa fa-star start-unfilled" aria-hidden="true"></i>
+                                </div>
+                                <div class="rating__score">4.0</div>
                             </div>
-                            <div class="rating__score">4.0</div>
                         </div>
                     </div>
-                </div> -->
-
-            </div>
+                </li>
+            </ul>
         </section>
 
         <section class="newsletter-section">
             <div class="newsletter">
-                <h2>Sign-up for our newsletter to get 10% off!</h2>
-                <form action="">
-                    <input type="text" placeholder="Your email address">
-                    <button type="submit">Subscribe</button>
+                <h2 class="newsletter__header">Sign up for our newsletter <div>to get up to 50% off!</div></h2>
+                <form class="newsletter__form" action="">
+                    <input class="newsletter__form__input" type="text" placeholder="Your email address">
+                    <button class="newsletter__form__submit-btn" type="submit">Subscribe</button>
                 </form>
+                <a class="newsletter__new-member-link" href="#">What's it all about?</a>
             </div>
         </section>
 
