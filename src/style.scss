@@ -27,9 +27,45 @@ img {
 }
 
 
+@mixin basicHeading($headingColor:variables.$main-white) {
+    font-size:2rem;
+        line-height: 1.2;
+        color:variables.$main-white;
+}
+
+
+@mixin basicSubHeading($headingColor:variables.$secondary-white) {
+    font-weight:400;
+    line-height: 1.4;
+    color:variables.$secondary-white;
+}
+
+
+@mixin basicTinyHeading($headingColor:variables.$main-orange) {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color:variables.$main-orange;
+}
 
 
 
+
+
+
+// app
+.app {
+    max-width:900px;
+    margin:0 auto;
+}
+@media (max-width:800px) {
+    .app {
+        max-width:100%;
+    }
+}
+
+@media (max-width:650px) {
+    // introduce the mobile view here
+}
 
 
 
@@ -61,7 +97,6 @@ img {
     }
 }
 
-
 .sign-up-btn {
     @include buttonBasic;
     margin-left:1rem;
@@ -84,14 +119,10 @@ img {
 .header__info {
     position: relative;
     h2 {
-        font-size:2rem;
-        line-height: 1.2;
-        color:variables.$main-white;
+        @include basicHeading;
     }
     h3 {
-        font-weight:400;
-        line-height: 1.4;
-        color:variables.$secondary-white;
+        @include basicSubHeading;
         margin:1.25rem 0 1.25rem 0;
     }
 }
@@ -105,16 +136,18 @@ img {
 
 
 .header__imgs {
-    // background:gray;
     position: relative;
-    width:377px;
+    /*
+    385px is width of navbar__links
+    0.5 rem is the margin on an a tag within navbar__links
+    */
+    width:calc(385px - 0.5rem);
     z-index:100;
     left:0;
     top:0;
 }
 
 .header__imgs__img-1 {
-    // position: absolute;
     z-index:100;
     max-width:200px;
     display:block;
@@ -148,3 +181,181 @@ img {
 
 
 // about us
+.about-us {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-us__img {
+    max-width:400px;
+}
+
+.about-us__info__heading {
+    @include basicTinyHeading;
+}
+
+.about-us__info__subheading {
+    @include basicHeading;
+    margin:0.75rem 0 0.75rem 0;
+}
+
+.about-us__info__text {
+    @include basicSubHeading;
+}
+
+
+
+
+
+// whats trending
+.popular-dish__titles {
+    h2 {
+        @include basicHeading;
+        // margin:0.75rem 0 0.75rem 0;
+        margin-top:0.75rem;
+        font-size:1.75rem;
+    }
+    h3 {
+        @include basicTinyHeading;
+    }
+}
+
+.popular-dish__dishes {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.popular-dish__dish {
+    text-align: center;
+
+    .rating__stars i {
+        color:variables.$star-color-1;
+    }
+}
+
+.popular-dish__dish__title {
+     font-weight: 500;
+     margin-top:0.25rem;
+}
+
+.popular-dish__dish__price {
+    color:variables.$secondary-white;
+    font-weight: 400;
+}
+
+.popular-dish__dish__img {
+    max-width:175px;
+}
+
+.popular-dish__dish__img-1 {
+    max-width: 200px;
+}
+
+.popular-dish__dish__img-3 {
+    max-width:210px;
+}
+
+
+
+
+
+// our menu
+// .our-menu {
+//     h2 {
+//         @include basicHeading;
+//         // margin:0.75rem 0 0.75rem 0;
+//         margin-top:0.75rem;
+//         margin-bottom:1.75rem;
+//         font-size:1.75rem;
+//     }
+//     h3 {
+//         @include basicTinyHeading;
+//     }
+// }
+
+// .our-menu__menu-imgs {
+//     display:grid;
+//     grid-template-columns: 0.75fr 2fr;
+// }
+
+// .our-menu__menu-img-1 {
+//     object-fit: cover;
+//     object-position: center center;
+//     max-width:100%;
+//     height:calc(400px + 2rem);
+//     display:block;
+// }
+
+// .square-imgs {
+//     display:grid;
+//     grid-template-rows: repeat(2, 1fr);
+//     grid-template-columns: repeat(2, 1fr);
+//     width:100%;
+//     grid-gap: 2rem 1rem;
+//     margin-left:1.75rem;
+// }
+
+// .menu-img-square {
+//     max-width:100%;
+//     width:400px;
+//     height:200px;
+//     object-fit: cover;
+//     object-position: center center;
+//     display:block;
+// }
+
+
+
+
+
+.testimonials {
+    h2 {
+        @include basicHeading;
+        font-size:1.75rem;
+        margin-bottom:1rem;
+    }
+}
+
+.testimonial__card {
+    border:2px solid #999;
+    border-radius: 10px;
+    text-align: center;
+    padding:2rem;
+}
+
+.testimonial__text {
+    // margin:2rem 0;
+}
+
+.testimonial__profile {
+    display:flex;
+    // justify-content: center;
+    // align-items:center;
+
+}
+
+.testimonial__profile__info {
+    h2 {
+        font-size:1rem;
+        font-weight: 400;
+        margin-top:0rem;
+    }
+
+    .testimonial__card__rating {
+        display:flex;
+        .rating__score {
+            margin-left:0.25rem;
+        }
+    }
+}
+
+.testimonial__profile__img {
+    border-radius: 50%;
+    width:55px;
+    height:55px;
+    object-fit: cover;
+    object-position: center center;
+    margin-right:0.6rem;
+}
