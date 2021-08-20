@@ -23,7 +23,7 @@ img {
 
 @mixin basicHover() {
     transition: color 0.25s ease;
-    opacity: 0.9;
+    opacity: 0.95;
     cursor: pointer;
 }
 
@@ -108,6 +108,9 @@ img {
     margin-left:1rem;
 }
 
+.sign-up-btn:hover {
+    @include basicHover;
+}
 
 
 
@@ -138,6 +141,10 @@ img {
     font-size:1rem;
     font-weight: 700;
     padding:0.55rem 1.55rem;
+}
+
+.get-started-btn:hover {
+    @include basicHover;
 }
 
 .header__imgs {
@@ -337,10 +344,10 @@ img {
 
 
 
-// newsletter-section
+// newsletter
 .newsletter-section {
     @include spacingBetweenSections;
-    padding:6rem 0;
+    padding:4rem 0;
     background-color:variables.$secondary-orange;
     border-radius: 5px;
     background-image: url("./images/newsletter/miti-qYreP9QOdrk-unsplash.jpg");
@@ -406,4 +413,43 @@ img {
 
 .newsletter__new-member-link:hover {
     @include basicHover;
+}
+
+
+
+
+
+// footer
+.footer {
+    margin-top:3rem;
+    margin-bottom:1.5rem;
+}
+
+.footer__inner {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__info__location {
+    margin:0.25rem 0;
+}
+
+.social-links__link {
+    i {
+        font-size:1.25rem;
+        margin:0 0.25rem;
+    }
+}
+
+
+.footer__site-links-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright-notice {
+    margin-top:3rem;
+    text-align:center;
 }
