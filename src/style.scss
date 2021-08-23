@@ -278,6 +278,12 @@ img {
 
 
 
+// our menu
+
+
+
+
+
 // testimonials
 .testimonials {
     @include spacingBetweenSections;
@@ -422,7 +428,7 @@ img {
 // footer
 .footer {
     margin-top:3rem;
-    margin-bottom:1.5rem;
+    margin-bottom:1rem;
 }
 
 .footer__inner {
@@ -432,13 +438,21 @@ img {
 }
 
 .footer__info__location {
-    margin:0.25rem 0;
+    margin: 0.15rem 0;
+}
+
+.social-links {
+    padding:10px 0;
 }
 
 .social-links__link {
+    margin:0 0.25rem;
     i {
         font-size:1.25rem;
-        margin:0 0.25rem;
+    }
+
+    &:hover {
+        @include basicHover;
     }
 }
 
@@ -446,10 +460,30 @@ img {
 .footer__site-links-container {
     display: flex;
     justify-content: space-between;
+    align-items:center;
 }
 
+.footer__site-links {
+    margin:0 2rem;
+}
+
+.site-link__header-link {
+    color:variables.$main-white;
+    font-size:0.8rem;
+    font-weight: 400;
+}
+
+.site-links__link {
+    color:variables.$secondary-white;
+    font-size:0.75rem;
+    margin: 0.5rem 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 .copyright-notice {
-    margin-top:3rem;
+    margin-top:1.5rem;
     text-align:center;
 }
