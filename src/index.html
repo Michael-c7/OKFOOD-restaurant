@@ -50,7 +50,7 @@
         </section>
 
         <section class="popular-dish">
-            <div  class="popular-dish__titles">
+            <div class="popular-dish__titles">
                 <h3>POPULAR DISH</h3>
                 <h2>What's Trending?</h2>
             </div>
@@ -97,15 +97,23 @@
         <section class="our-menu">
             <h3>OUR MENU</h3>
             <h2>Today's Menu</h2>
-            <div class="our-menu__menu-imgs">
-                <img class="our-menu__menu-img our-menu__menu-img-1" src="<%=require('./images/our-menu/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg')%>">
-                <div class="square-imgs">
-                    <img class="our-menu__menu-img our-menu__menu-img-2 menu-img-square" src="<%=require('./images/our-menu/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg')%>">
-                    <img class="our-menu__menu-img our-menu__menu-img-3 menu-img-square" src="<%=require('./images/our-menu/patrick-le-6HvDmcA0W1w-unsplash.jpg')%>">
-                    <img class="our-menu__menu-img our-menu__menu-img-4 menu-img-square" src="<%=require('./images/our-menu/proriat-hospitality-lwoTuByIuC4-unsplash.jpg')%>">
-                    <img class="our-menu__menu-img our-menu__menu-img-5 menu-img-square" src="<%=require('./images/our-menu/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg')%>">
-                </div>
-            </div>
+            <ul class="our-menu__menu-img-items">
+                <li class="our-menu__menu-img-item menu-item-1">
+                    <img src="<%=require('./images/our-menu/melissa-walker-horn-gtDYwUIr9Vg-unsplash.jpg')%>">
+                </li>
+                <li class="our-menu__menu-img-item menu-item-2">
+                    <img src="<%=require('./images/our-menu/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash.jpg')%>">
+                </li>
+                <li class="our-menu__menu-img-item menu-item-3">
+                    <img src="<%=require('./images/our-menu/patrick-le-6HvDmcA0W1w-unsplash.jpg')%>">
+                </li>
+                <li class="our-menu__menu-img-item menu-item-4">
+                    <img src="<%=require('./images/our-menu/proriat-hospitality-lwoTuByIuC4-unsplash.jpg')%>">
+                </li>
+                <li class="our-menu__menu-img-item menu-item-5">
+                    <img src="<%=require('./images/our-menu/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg')%>">
+                </li>
+            </ul>
         </section>
 
         <section class="testimonials">
@@ -164,7 +172,7 @@
 
         <section class="newsletter-section">
             <div class="newsletter">
-                <h2 class="newsletter__header">Sign up for our newsletter <div>to get up to 50% off!</div></h2>
+                <h2 class="newsletter__header">Sign up for our newsletter <div>and get up to 50% off!</div></h2>
                 <form class="newsletter__form" action="">
                     <input class="newsletter__form__input" type="text" placeholder="Your email address">
                     <button class="newsletter__form__submit-btn" type="submit">Subscribe</button>
