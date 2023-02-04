@@ -1,1 +1,1 @@
-/*I have no idea why this file exists but webpack wont run wihout it*/
+/*I have no idea why this file exists but webpack wont run without it*/
